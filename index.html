@@ -207,6 +207,11 @@
   footer { background: var(--cream-2); text-align: center; padding: 72px 24px; }
   footer .thanks { font-family: "Cormorant Garamond", serif; font-size: clamp(30px, 8vw, 52px); color: var(--rose-deep); }
   footer .names-sm { color: var(--rose); letter-spacing: 3px; margin-top: 14px; }
+  footer .hosts { margin: 26px auto 0; max-width: 420px; color: var(--rose-deep); line-height: 1.9; }
+  footer .hosts .host-line { font-family: "Noto Serif SC", serif; font-size: 15px; letter-spacing: 1px; }
+  footer .hosts .host-role { color: var(--muted); font-size: 12px; letter-spacing: 2px; }
+  footer .hosts .host-names { font-size: 18px; color: var(--rose-deep); margin: 2px 0 10px; }
+  footer .hosts .host-invite { color: var(--rose); letter-spacing: 4px; margin-top: 6px; font-size: 15px; }
   footer .copy { color: var(--muted); font-size: 12px; margin-top: 26px; }
 
   @media (max-width: 520px) {
@@ -486,7 +491,17 @@
 <footer>
   <div class="reveal">
     <div class="thanks serif-en">Thank You</div>
-    <div class="names-sm">洪诗铭 &amp; 林程嫱　敬邀</div>
+    <div class="names-sm">洪诗铭 &amp; 林程嫱</div>
+    <div class="hosts">
+      <div class="host-line">谨订于 2026年11月1日（星期日）<br>为子女举行婚宴 · 恭候光临</div>
+      <div style="margin-top:18px;">
+        <div class="host-role">男方主婚人</div>
+        <div class="host-names">洪本泉　·　余娜妮</div>
+        <div class="host-role">女方主婚人</div>
+        <div class="host-names">林进发　·　陈素素</div>
+      </div>
+      <div class="host-invite">敬邀</div>
+    </div>
     <div class="copy">© 2026 With Love<br><span style="font-size:11px;opacity:.7;">Music: “Touching Moments” · Kevin MacLeod · CC BY 4.0</span></div>
   </div>
 </footer>
