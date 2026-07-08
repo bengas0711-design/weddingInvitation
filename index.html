@@ -3,7 +3,25 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>洪诗铭 & 林程嫱 · 婚礼邀请函</title>
+<!--
+  ============================================================
+  ✏️  自己修改指南（用 Ctrl+F 搜下面的关键字快速跳转）
+  ============================================================
+  【可改-封面大图】   首页大背景照片
+  【可改-信封照片】   开场信封上的圆形合照
+  【可改-头像】       新郎/新娘头像照片
+  【可改-日期】       婚礼日期
+  【可改-时间】       婚礼时间
+  【可改-地点】       酒楼名称 / 地图链接
+  【可改-流程】       当日流程（签到、开席时间与项目）
+  【可改-倒计时日期】 倒计时 & 内部用的婚礼日期时间
+  【可改-相册照片】   「我们的瞬间」槟城 / 北京相册照片清单
+  ------------------------------------------------------------
+  改照片：把文件名换成 WeddingPhoto-web/ 或 BeijingWeddingPhoto-web/ 里已有的图片名即可
+  改完保存后，记得把 index.html 重新上传到 GitHub 覆盖旧的，网站才会更新
+  ============================================================
+-->
+<title>洪诗铭 & 林程嫱 · 婚礼邀请函 ｜ 天天鱼酒楼·槟城</title>
 <meta name="description" content="2026年11月1日（星期日）· 天天鱼酒楼（槟城 Raja Uda）· 诚挚邀请您见证我们的幸福时刻" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://bengas0711-design.github.io/weddingInvitation/" />
@@ -54,7 +72,7 @@
     min-height: 100vh;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; padding: 40px 24px; position: relative; overflow: hidden;
-    /* ▼▼▼ 替换封面大图：改下面 url(...) 即可 ▼▼▼ */
+    /* 【可改-封面大图】首页大背景照片：改下面那行 url('...') 里的文件名即可 */
     background:
       radial-gradient(circle at 18% 16%, rgba(174, 216, 225, 0.42), transparent 46%),
       radial-gradient(circle at 82% 82%, rgba(243, 197, 208, 0.40), transparent 46%),
@@ -258,6 +276,7 @@
   }
   .env-seal {
     width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 22px;
+    /* 【可改-信封照片】开场信封上的圆形合照：改下面 url('...') 里的文件名 */
     background-image: url('WeddingPhoto-web/926A5120.jpg');
     background-size: cover; background-position: center 30%;
     border: 4px solid #fff;
@@ -328,12 +347,14 @@
     <p>感谢生命中与你相遇。<br>在最好的时光里，我们决定携手走向未来。<br>诚挚地邀请您见证我们爱的承诺。</p>
     <div class="couple">
       <div class="person">
+        <!-- 【可改-头像】新郎头像：改 url('...') 里的文件名 -->
         <div class="avatar" style="background-image:url('WeddingPhoto-web/0T1A3128b.jpg'); background-position:center 20%;"></div>
         <h3>洪诗铭</h3>
         <div class="role">THE GROOM 新郎</div>
         <p>愿做你最坚实的依靠。</p>
       </div>
       <div class="person">
+        <!-- 【可改-头像】新娘头像：改 url('...') 里的文件名 -->
         <div class="avatar" style="background-image:url('WeddingPhoto-web/0T1A3125.jpg'); background-position:center 20%;"></div>
         <h3>林程嫱</h3>
         <div class="role">THE BRIDE 新娘</div>
@@ -372,18 +393,21 @@
       <div class="card">
         <div class="icon">📅</div>
         <h3>日期</h3>
+        <!-- 【可改-日期】婚礼日期（改这两行文字；如改日期记得也改下面【可改-倒计时日期】） -->
         <div class="big">2026年11月1日</div>
         <p>星期日</p>
       </div>
       <div class="card">
         <div class="icon">⏰</div>
         <h3>时间</h3>
-        <div class="big">上午 11:00</div>
-        <p>时间暂定，最终以正式通知为准</p>
+        <!-- 【可改-时间】婚礼时间 -->
+        <div class="big">下午 1:00 开始</div>
+        <p>敬备喜宴，恭候光临（时间稍有弹性）</p>
       </div>
       <div class="card">
         <div class="icon">📍</div>
         <h3>地点</h3>
+        <!-- 【可改-地点】酒楼名称 / 地图链接（改下面文字与 a 标签的 href 网址） -->
         <div class="big" style="font-size:22px;">天天鱼酒楼</div>
         <p>Raja Uda · 槟城</p>
         <p><a href="https://www.google.com/maps/place/%E5%A4%A9%E5%A4%A9%E9%B1%BCraja+uda/data=!4m2!3m1!1s0x304ac45b2dae9453:0xf42cbec2b571d65a?sa=X&ved=1t:242&ictx=111" target="_blank" rel="noopener">查看地图导航 →</a></p>
@@ -401,10 +425,10 @@
       <p class="sec-note" style="color:var(--muted);font-weight:300;margin-top:8px;">温馨午宴 · 具体流程待定，敬请留意后续通知</p>
     </div>
     <div class="timeline">
-      <!-- ▼▼▼ 替换流程 ▼▼▼ -->
-      <div class="tl-item"><div class="dot"></div><div class="time">11:30<span style="font-size:12px;opacity:.7;"> 暂定</span></div><h4>宾客签到</h4><p>恭候您的到来，签到留念</p></div>
-      <div class="tl-item"><div class="dot"></div><div class="time">12:00<span style="font-size:12px;opacity:.7;"> 暂定</span></div><h4>午宴开席</h4><p>欢聚一堂，共享喜悦</p></div>
-      <!-- ▲▲▲ -->
+      <!-- 【可改-流程】当日流程：每行一个项目；可改时间/名称，或复制一行新增 -->
+      <div class="tl-item"><div class="dot"></div><div class="time">12:30<span style="font-size:12px;opacity:.7;"> 暂定</span></div><h4>宾客签到</h4><p>恭候您的到来，签到留念</p></div>
+      <div class="tl-item"><div class="dot"></div><div class="time">13:00<span style="font-size:12px;opacity:.7;"> 暂定</span></div><h4>午宴开席</h4><p>欢聚一堂，共享喜悦</p></div>
+      <!-- 流程结束 -->
     </div>
   </div>
 </section>
@@ -512,13 +536,16 @@
 </div>
 
 <script>
-  const WEDDING_DATE = new Date(2026, 10, 1, 11, 0, 0); // 2026-11-01 11:00（时间暂定）
+  // 【可改-倒计时日期】婚礼日期时间（月份要减1：10=11月）。倒计时和封面年份都用它
+  const WEDDING_DATE = new Date(2026, 10, 1, 13, 0, 0); // 2026-11-01 13:00（下午1点，稍有弹性）
 
   const CONFIG = {
     // 留言墙后端地址：填 Google Apps Script 的 /exec 网址（留空则仅本地演示）
     WALL_ENDPOINT: "https://script.google.com/macros/s/AKfycby7x74pWyVBHCfr4ZlyPlx4C4ZtZTMstKJM3Ma1tfp6YofCA7J31SQk-oJAl9X5eta8pQ/exec"
   };
 
+  // 【可改-相册照片】「我们的瞬间」相册：penang=槟城，beijing=北京
+  // 只要把 files 里的文件名换成对应文件夹里已有的图片名即可（用半角逗号 , 和引号 ""）
   const ALBUMS = {
     penang: {
       dir: "WeddingPhoto-web/",
